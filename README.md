@@ -4,6 +4,19 @@ Find the change notice, compare it with the departure board, and open either ori
 
 [Project website](https://mehtapozkan.github.io/Pin/) · [Download Pin for Xcode](https://mehtapozkan.github.io/Pin/Pin-source.zip)
 
+[![Pin connects an evening flight to a changed train and hotel, using four original photos.](pin-evening-connection.png)](Verification/Screens/nativ-itinerary.png)
+
+## Clone and run
+
+```sh
+git clone https://github.com/Mehtapozkan/iBrain.git
+git clone https://github.com/Mehtapozkan/Pin.git
+cd Pin
+swift test
+```
+
+[Build instructions and verification](BUILD.md)
+
 ## Reconstruct an itinerary
 
 Pin reads labelled travel records with Apple Vision. It matches the train booking, applies the saved schedule change and calculates the time between your flight and train.
@@ -18,7 +31,7 @@ Pin connects saved interpretations to their photos. You can correct a detail or 
 
 ## Run the local preview
 
-Unpack Pin, iBrain and Pin-Qwen-6bit into sibling folders on an Apple silicon Mac. Follow the Pin README to start Nativ and run the SwiftUI demo in Xcode. The sample pack includes eight fictional photos.
+Clone Pin and iBrain side by side and unpack Pin-Qwen-6bit next to them on an Apple silicon Mac. Follow BUILD.md to start Nativ and run the SwiftUI demo in Xcode. The sample pack includes eight fictional photos.
 
 ## Verification
 
