@@ -4,7 +4,7 @@ Pin reads saved photos and connects an answer to the photos that support it. Thi
 
 ## Run the Nativ demo
 
-Use an Apple Silicon Mac, Xcode with an iOS Simulator, Python 3 and a separately installed Nativ app. The verified setup used Nativ 0.4.3, Xcode 26.6 and iOS 26.5. Unpack all three distributions into one parent directory so that `Pin`, `iBrain` and `Pin-Qwen-6bit` are siblings.
+Use an Apple Silicon Mac, Xcode with an iOS Simulator, Python 3 and a separately installed Nativ app. The verified setup used Nativ 0.4.3, Xcode 26.6 and iOS 26.5. Clone the Pin and iBrain repositories and unpack the model release in the same parent directory so that `Pin`, `iBrain` and `Pin-Qwen-6bit` are siblings.
 
 1. From the Pin directory run `python3 Tools/start-nativ.py /Applications/Nativ.app ../Pin-Qwen-6bit`. Leave that terminal running.
 2. Open `PinSavedPlaces.xcodeproj`, choose the PinSavedPlaces scheme and run it on an iPhone Simulator. Import the PNGs from `Verification/Photos` into that simulator's Photos library. Grant Pin access and wait for the photos to be read.
@@ -19,6 +19,6 @@ The itinerary reader currently recognizes labelled English travel records and ex
 
 ## Verification
 
-Run `swift test` for the 133 portable Pin core tests. Run `Verification/replay.sh BOOTED_SIMULATOR_UDID` with Nativ running. It builds the package, executes the shipping itinerary code in the simulator, and compares returned facts and source IDs with the answer key. The retained comparator and results are in `Verification`. The 74 cases include the original 15, the expanded checks, and two release regressions covering saved changes and a platform printed on the original ticket. The separate UI test exercises PhotoKit, rendering and navigation. To reproduce it, use a disposable simulator with just the eight supplied photos plus any stock simulator photos. Install Pin, start Nativ, then run the PinHeadlessUI scheme in `Verification/UI/PinHeadlessUI.xcodeproj` against the same simulator. This test grants access to the simulator's fictional library. It checks both source buttons, the return path and the connection interval after a saved change.
+Run `swift test` for the 133 portable Pin core tests. Run `bash Verification/replay.sh BOOTED_SIMULATOR_UDID` with Nativ running. It builds the package, executes the shipping itinerary code in the simulator, and compares returned facts and source IDs with the answer key. The retained comparator and results are in `Verification`. The 74 cases include the original 15, the expanded checks, and two release regressions covering saved changes and a platform printed on the original ticket. The separate UI test exercises PhotoKit, rendering and navigation. To reproduce it, use a disposable simulator with just the eight supplied photos plus any stock simulator photos. Install Pin, start Nativ, then run the PinHeadlessUI scheme in `Verification/UI/PinHeadlessUI.xcodeproj` against the same simulator. This test grants access to the simulator's fictional library. It checks both source buttons, the return path and the connection interval after a saved change.
 
 Pin is distributed under the MIT license. See LICENSE.
