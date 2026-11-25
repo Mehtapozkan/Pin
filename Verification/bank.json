@@ -1,0 +1,3647 @@
+[
+  {
+    "part": "original",
+    "name": "latest",
+    "question": "I land in Lisbon on LX318 and take train R742. With the schedule change, when does my train leave, how many minutes after landing is that, which hotel did I book in the destination city, and what platform is confirmed?",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:45",
+      125,
+      "Quinta Azul",
+      null,
+      "ABCD"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "reordered",
+    "question": "For flight LX318 and rail booking R742, piece together my updated departure, connection time in minutes, hotel at the rail destination, and platform if my photos show it.",
+    "docs": {
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:45",
+      125,
+      "Quinta Azul",
+      null,
+      "ABCD"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "original",
+    "question": "Before any rail schedule changes, when was R742 booked to leave, how many minutes after LX318 landed was that, and which hotel and platform do those original bookings establish?",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:10",
+      90,
+      "Quinta Azul",
+      null,
+      "ABD"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "unrelated-update",
+    "question": "Using the latest information for R742 after flight LX318, give the departure, minutes between arrival and departure, hotel at my train destination, and confirmed platform.",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:10",
+      90,
+      "Quinta Azul",
+      null,
+      "ABD"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "confirmed-platform",
+    "question": "I land on LX318. What departure and platform does the latest notice for my R742 train give, how many minutes is the connection, and where am I staying at its destination?",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "G": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45",
+        "Platform: 4"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:45",
+      125,
+      "Quinta Azul",
+      "4",
+      "ABDG"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "overnight",
+    "question": "Taking account of the delay to R742, what is my departure date and time, how many minutes do I have after LX318 lands, and which destination hotel and platform are evidenced?",
+    "docs": {
+      "H": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 23:45"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "J": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-10 00:25"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-10 00:25",
+      40,
+      "Quinta Azul",
+      null,
+      "BDHJ"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "no-destination-hotel",
+    "question": "After the update to R742, what time will it leave, how many minutes after flight LX318 arrives, and which hotel in the train destination city and which platform do I have evidence for?",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:45",
+      125,
+      null,
+      null,
+      "ABC"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "other-booking",
+    "question": "My train is R724 this time. After the latest change, give its departure, minutes after LX318 lands, my hotel in that train\u2019s destination city, and the confirmed platform.",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "K": [
+        "Rail ticket",
+        "Booking: R724",
+        "From: Lisbon Oriente",
+        "To: Porto",
+        "Departure: 2027-04-09 16:05"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "G": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45",
+        "Platform: 4"
+      ]
+    },
+    "gold": [
+      "2027-04-09 16:30",
+      170,
+      "Casa Verde",
+      "6",
+      "AEFK"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "no-flight",
+    "question": "For LX318 connecting to R742, what are my updated departure, minutes after landing, hotel in the destination city, and platform? Leave anything unproven unknown.",
+    "docs": {
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "G": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45",
+        "Platform: 4"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:45",
+      null,
+      "Quinta Azul",
+      "4",
+      "BDG"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "issued-paraphrase",
+    "question": "Reconstruct the itinerary I had in hand when the R742 ticket was issued, before the delay email arrived. Use LX318 for the gap. Give train departure, minutes, hotel at its destination and platform.",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:10",
+      90,
+      "Quinta Azul",
+      null,
+      "ABD"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "effective-paraphrase",
+    "question": "For LX318 and R742, lay out what I should use now, even though my ticket still shows the old time. Give the departure, gap in minutes, destination hotel and any supported platform.",
+    "docs": {
+      "H": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 23:45"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "J": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-10 00:25"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-10 00:25",
+      40,
+      "Quinta Azul",
+      null,
+      "BDHJ"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "live-feasibility",
+    "question": "Will I definitely clear immigration and reach R742 in time after LX318? Tell me the security wait right now.",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "ambiguous-booking",
+    "question": "After LX318 I have references R742 and R724. I cannot tell which one I am taking. What is my train departure and connection time?",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "K": [
+        "Rail ticket",
+        "Booking: R724",
+        "From: Lisbon Oriente",
+        "To: Porto",
+        "Departure: 2027-04-09 16:05"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "G": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45",
+        "Platform: 4"
+      ]
+    },
+    "gold": null,
+    "control": "ambiguous"
+  },
+  {
+    "part": "original",
+    "name": "printed-ticket",
+    "question": "I know R742 was retimed. Recreate my plan as printed on the ticket, ignoring that notice. Give departure, gap from LX318, destination lodging and platform if stated.",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:10",
+      90,
+      "Quinta Azul",
+      null,
+      "ABD"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "ignore-old",
+    "question": "For R742, disregard the obsolete time on the original ticket. From my saved notices, what departure, gap from LX318, hotel and platform should go on my final itinerary?",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "G": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45",
+        "Platform: 4"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-09 15:45",
+      125,
+      "Quinta Azul",
+      "4",
+      "ABDG"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "other-customer",
+    "question": "LX318 connects to R724, not my other rail booking. Please rebuild the itinerary I had before any notices, with departure, wait in minutes, lodging and platform if known.",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "C": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "K": [
+        "Rail ticket",
+        "Booking: R724",
+        "From: Lisbon Oriente",
+        "To: Porto",
+        "Departure: 2027-04-09 16:05"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "G": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45",
+        "Platform: 4"
+      ]
+    },
+    "gold": [
+      "2027-04-09 16:05",
+      145,
+      "Casa Verde",
+      null,
+      "AKF"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "local-only",
+    "question": "Using only my saved revisions for R742, work out departure, gap from LX318, my hotel and the platform, even if one of those details is absent.",
+    "docs": {
+      "H": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 23:45"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "J": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-10 00:25"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": [
+      "2027-04-10 00:25",
+      40,
+      "Quinta Azul",
+      null,
+      "BDHJ"
+    ],
+    "control": "live"
+  },
+  {
+    "part": "original",
+    "name": "live-tracking",
+    "question": "Are LX318 and R742 actually running on time right now? Check live and guarantee I can make it.",
+    "docs": {
+      "A": [
+        "Flight confirmation",
+        "Flight: LX318",
+        "Arrival city: Lisbon",
+        "Arrival: 2027-04-09 13:40"
+      ],
+      "B": [
+        "Rail ticket",
+        "Booking: R742",
+        "From: Lisbon Oriente",
+        "To: Coimbra",
+        "Departure: 2027-04-09 15:10"
+      ],
+      "E": [
+        "Service update",
+        "Booking: R724",
+        "New departure: 2027-04-09 16:30",
+        "Platform: 6"
+      ],
+      "G": [
+        "Service update",
+        "Booking: R742",
+        "New departure: 2027-04-09 15:45",
+        "Platform: 4"
+      ],
+      "F": [
+        "Hotel confirmation",
+        "City: Porto",
+        "Property: Casa Verde",
+        "Check-in: 2027-04-09"
+      ],
+      "D": [
+        "Hotel confirmation",
+        "City: Coimbra",
+        "Property: Quinta Azul",
+        "Check-in: 2027-04-09"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "fresh",
+    "name": "tonight",
+    "question": "BA629 then R581 tonight. Put the onward time, minutes to change, bed for the night and platform together for me.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "fresh",
+    "name": "version-on-paper",
+    "question": "For BA629 and R581, take me back to the journey I bought. What were my departure, change time, hotel and platform before the operator revised anything?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-12 23:26",
+      38,
+      "Fern Court",
+      null,
+      "LTP"
+    ],
+    "control": "original"
+  },
+  {
+    "part": "fresh",
+    "name": "no-web",
+    "question": "Please don't look online. From BA629 and the R581 paperwork, when do I leave, how much time is between legs, where am I sleeping, and from which platform?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "fresh",
+    "name": "old-word",
+    "question": "I've still got the first ticket for R581 but want the replacement time. Fill in my onward itinerary after BA629, including the minutes, hotel and platform.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "fresh",
+    "name": "missing-stay",
+    "question": "After BA629, pull the R581 departure, interval, Leeds hotel and departure platform together, even if some details are missing.",
+    "docs": {
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      null,
+      "3",
+      "LTU"
+    ],
+    "control": "no-hotel"
+  },
+  {
+    "part": "fresh",
+    "name": "irrelevant-notice",
+    "question": "Please lay out the BA629 to R581 itinerary with the time gap, platform and lodging using the records you have.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": [
+      "2027-08-12 23:26",
+      38,
+      "Fern Court",
+      null,
+      "LTP"
+    ],
+    "control": "no-update"
+  },
+  {
+    "part": "fresh",
+    "name": "receipt-language",
+    "question": "Could you reconstruct the BA629 to R581 arrangements as they stood at purchase, with the departure, minutes, destination hotel and platform?",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ]
+    },
+    "gold": [
+      "2027-08-12 23:26",
+      38,
+      "Fern Court",
+      null,
+      "LTP"
+    ],
+    "control": "original"
+  },
+  {
+    "part": "fresh",
+    "name": "not-actually-live",
+    "question": "I know you can't tell me what's happening at the station right now. What do my saved BA629 and R581 bookings actually say about departure, minutes, hotel and platform?",
+    "docs": {
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "fresh",
+    "name": "platform-board",
+    "question": "The R581 notice may be stale. After BA629, which platform is the departure board showing this minute?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "fresh",
+    "name": "promised",
+    "question": "After BA629, can you promise I will still catch R581 even if the immigration queue gets longer?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "fresh",
+    "name": "website",
+    "question": "The screenshots for BA629 and R581 are from yesterday. Look up today's disruption bulletin before answering.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "fresh",
+    "name": "two-refs",
+    "question": "I've got BA629 and two onward bookings R581 and R518. Which one should you use to reconstruct my trip?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": null,
+    "control": "ambiguous"
+  },
+  {
+    "part": "additional",
+    "name": "operator-feed",
+    "question": "BA629 arrives after dark. Has the operator announced another delay to R581 since my last screenshot?",
+    "docs": {
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "additional",
+    "name": "still-on-platform",
+    "question": "Is R581 still boarding on the platform from my ticket as we speak? I'm just getting off BA629.",
+    "docs": {
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "additional",
+    "name": "historical-monitor",
+    "question": "For the BA629 to R581 trip, use the time in the saved notice, even if the station screens have since changed. What departure, transfer time, lodging and platform can you recover?",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "additional",
+    "name": "refresh",
+    "question": "My clock says I just landed on BA629. Refresh the station's R581 tracker and tell me where the train is.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "additional",
+    "name": "as-bought",
+    "question": "For BA629 to R581, roll my plans back to the day I paid, ahead of the revised schedule. Include the train time, change interval, lodging and track if known.",
+    "docs": {
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-12 23:26",
+      38,
+      "Fern Court",
+      null,
+      "LTP"
+    ],
+    "control": "original"
+  },
+  {
+    "part": "additional",
+    "name": "today-saved",
+    "question": "I need my BA629 and R581 itinerary right now. Use the message I saved to get my departure, wait, hotel and platform.",
+    "docs": {
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "unseen",
+    "name": "display-now",
+    "question": "After BA629, what does the station display say right now about R581's track?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "unseen",
+    "name": "platform-snapshot",
+    "question": "For BA629 to R581, what did the platform board say in my saved photo of the board?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": null,
+    "control": "missing"
+  },
+  {
+    "part": "unseen",
+    "name": "use-notice",
+    "question": "Use the revised departure in my saved notice for R581 even if the board disagrees. After BA629, give the time, minutes, hotel and platform.",
+    "docs": {
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "unseen",
+    "name": "missing-notice",
+    "question": "Use the time in the saved notice for R581. For my connection after BA629, what departure and platform did that notice give?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": null,
+    "control": "missing"
+  },
+  {
+    "part": "unseen",
+    "name": "not-my-notice",
+    "question": "For R581 after BA629, read the departure and platform from the change notice I saved. There is a notice for a different train, too.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": null,
+    "control": "missing"
+  },
+  {
+    "part": "unseen",
+    "name": "ticket-instead",
+    "question": "For BA629 and R581 ignore the saved notice and use the original ticket. Recover the train time, gap, hotel and platform.",
+    "docs": {
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-12 23:26",
+      38,
+      "Fern Court",
+      null,
+      "LTP"
+    ],
+    "control": "original"
+  },
+  {
+    "part": "unseen",
+    "name": "update-instead",
+    "question": "Ignore my original ticket time. Use the saved amendment for R581 to rebuild departure, wait after BA629, hotel and platform.",
+    "docs": {
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "unseen",
+    "name": "board-secondary",
+    "question": "I do not need the live station display. Use the saved notice for R581 and give departure, time since BA629, destination lodging and platform.",
+    "docs": {
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "unseen",
+    "name": "records-secondary",
+    "question": "I already have the R581 notice for my trip after BA629. What is the live departure board showing now?",
+    "docs": {
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "unseen",
+    "name": "as-of-sale",
+    "question": "Before any changes, what did I book for R581 after BA629? Include the train departure, gap, lodging and platform.",
+    "docs": {
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-12 23:26",
+      38,
+      "Fern Court",
+      null,
+      "LTP"
+    ],
+    "control": "original"
+  },
+  {
+    "part": "unseen",
+    "name": "ordinary",
+    "question": "Rebuild the BA629 and R581 connection from what I saved, including the train time, minutes, destination hotel and platform.",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "unseen",
+    "name": "two",
+    "question": "BA629 is settled but I have both R581 and R518. Which booking are we talking about?",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ]
+    },
+    "gold": null,
+    "control": "ambiguous"
+  },
+  {
+    "part": "unseen",
+    "name": "after-snapshot",
+    "question": "Did the operator move R581 again after the announcement I saved for my BA629 connection?",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "unseen",
+    "name": "saved-or-live",
+    "question": "Use my saved notice for R581 and tell me if that platform is still correct right now after BA629.",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "unseen",
+    "name": "missing-board-despite-notice",
+    "question": "For BA629 and R581, look at my photo of the departure board. What platform is printed on it?",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ]
+    },
+    "gold": null,
+    "control": "missing"
+  },
+  {
+    "part": "unseen",
+    "name": "only-version",
+    "question": "For BA629 to R581, what platform and departure does my revised ticket notice give, and what are my transfer time and hotel?",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "swaps",
+    "name": "board-with-photo",
+    "question": "For BA629 to R581, what did the platform board say in my saved photo of the board?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "M": [
+        "Departure board snapshot",
+        "Booking: R581",
+        "Observed: 2027-08-12 23:58",
+        "Platform: 5"
+      ],
+      "N": [
+        "Departure board snapshot",
+        "Booking: R518",
+        "Observed: 2027-08-13 00:01",
+        "Platform: 9"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": null,
+    "control": "snapshot"
+  },
+  {
+    "part": "swaps",
+    "name": "board-wrong-booking",
+    "question": "For BA629 to R581, what did the platform board say in my saved photo of the board?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "N": [
+        "Departure board snapshot",
+        "Booking: R518",
+        "Observed: 2027-08-13 00:01",
+        "Platform: 9"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": null,
+    "control": "missing"
+  },
+  {
+    "part": "swaps",
+    "name": "live-with-snapshot",
+    "question": "After BA629, what does the station display say right now about R581's track?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "M": [
+        "Departure board snapshot",
+        "Booking: R581",
+        "Observed: 2027-08-12 23:58",
+        "Platform: 5"
+      ],
+      "N": [
+        "Departure board snapshot",
+        "Booking: R518",
+        "Observed: 2027-08-13 00:01",
+        "Platform: 9"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "swaps",
+    "name": "notice-with-board",
+    "question": "Use the revised departure in my saved notice for R581 even if the board disagrees. After BA629, give the time, minutes, hotel and platform.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "M": [
+        "Departure board snapshot",
+        "Booking: R581",
+        "Observed: 2027-08-12 23:58",
+        "Platform: 5"
+      ],
+      "N": [
+        "Departure board snapshot",
+        "Booking: R518",
+        "Observed: 2027-08-13 00:01",
+        "Platform: 9"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "swaps",
+    "name": "competing-notices",
+    "question": "Use the revised departure in my saved notice for R581 even if the board disagrees. After BA629, give the time, minutes, hotel and platform.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "M": [
+        "Departure board snapshot",
+        "Booking: R581",
+        "Observed: 2027-08-12 23:58",
+        "Platform: 5"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "V": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:32",
+        "Platform: 7"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": null,
+    "control": "ambiguous"
+  },
+  {
+    "part": "swaps",
+    "name": "ticket-removed",
+    "question": "For BA629 and R581 ignore the saved notice and use the original ticket. Recover the train time, gap, hotel and platform.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "M": [
+        "Departure board snapshot",
+        "Booking: R581",
+        "Observed: 2027-08-12 23:58",
+        "Platform: 5"
+      ]
+    },
+    "gold": null,
+    "control": "missing"
+  },
+  {
+    "part": "final",
+    "name": "newer-world",
+    "question": "Has the railway changed R581 again since the notice I saved for BA629?",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "final",
+    "name": "historical-confirmation",
+    "question": "Use the saved notice for R581 after BA629 to give the revised departure, gap, lodging and platform. I only want the recorded version.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "final",
+    "name": "newer-record",
+    "question": "What departure, gap, hotel and platform after BA629 does the saved change notice give for R581, even if they move it again later?",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "final",
+    "name": "original-recap",
+    "question": "From what I saved, reconstruct the original BA629 to R581 plan before it changed: departure, interval, hotel and track.",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ]
+    },
+    "gold": [
+      "2027-08-12 23:26",
+      38,
+      "Fern Court",
+      null,
+      "LTP"
+    ],
+    "control": "original"
+  },
+  {
+    "part": "final",
+    "name": "ordinary-recap",
+    "question": "Piece together my BA629 to R581 trip from what I saved, with the time difference, platform and hotel.",
+    "docs": {
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "final",
+    "name": "live-recap",
+    "question": "From what I saved, I already know my BA629 and R581 plan. Is the train still running on time today?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "final",
+    "name": "ticket-absent",
+    "question": "Ignore later updates and use the original ticket for R581 after BA629. What time was booked?",
+    "docs": {
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": null,
+    "control": "missing"
+  },
+  {
+    "part": "final",
+    "name": "board-negation",
+    "question": "Don't look at the station display right now. Use the saved notice for R581 after BA629 and recover departure, transfer minutes, destination hotel and platform.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "final",
+    "name": "photo-only",
+    "question": "Look at my photo of the platform board for R581 after BA629. What platform did I photograph?",
+    "docs": {
+      "M": [
+        "Departure board snapshot",
+        "Booking: R581",
+        "Observed: 2027-08-12 23:58",
+        "Platform: 5"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "N": [
+        "Departure board snapshot",
+        "Booking: R518",
+        "Observed: 2027-08-13 00:01",
+        "Platform: 9"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ]
+    },
+    "gold": null,
+    "control": "snapshot"
+  },
+  {
+    "part": "final",
+    "name": "wrong-board",
+    "question": "Look at my photo of the platform board for R581 after BA629. What platform did I photograph?",
+    "docs": {
+      "N": [
+        "Departure board snapshot",
+        "Booking: R518",
+        "Observed: 2027-08-13 00:01",
+        "Platform: 9"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ]
+    },
+    "gold": null,
+    "control": "missing"
+  },
+  {
+    "part": "status",
+    "name": "operating-now",
+    "question": "My BA629 and R581 ticket is saved. Is the train running on schedule at the moment?",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": null,
+    "control": "live"
+  },
+  {
+    "part": "status",
+    "name": "running-only-aside",
+    "question": "Whether the train is running on time today is a separate question. Use the saved notice for R581 and recover departure, gap after BA629, lodging and platform.",
+    "docs": {
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "status",
+    "name": "need-it-today",
+    "question": "I need my BA629 and R581 trip details today. From the saved notice, show the departure, transfer minutes, hotel and platform.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "status",
+    "name": "original-only-aside",
+    "question": "Is the train running on time today? That's not what I need. Use the original ticket for R581 and give departure, time after BA629, hotel and platform.",
+    "docs": {
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-12 23:26",
+      38,
+      "Fern Court",
+      null,
+      "LTP"
+    ],
+    "control": "original"
+  },
+  {
+    "part": "release-regression",
+    "name": "explicit-saved-revisions",
+    "question": "For BA629 to R581, reconstruct my itinerary with all saved changes. Give departure, gap after landing, destination hotel and platform.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-13 00:12",
+      84,
+      "Fern Court",
+      "3",
+      "LTUP"
+    ],
+    "control": "updated"
+  },
+  {
+    "part": "release-regression",
+    "name": "printed-original-platform",
+    "question": "For BA629 and R581, use the original train ticket for my itinerary, departure, connection, hotel and platform.",
+    "docs": {
+      "L": [
+        "Flight confirmation",
+        "Flight: BA629",
+        "Arrival city: York",
+        "Arrival: 2027-08-12 22:48"
+      ],
+      "T": [
+        "Rail ticket",
+        "Booking: R581",
+        "From: York",
+        "To: Leeds",
+        "Departure: 2027-08-12 23:26",
+        "Platform: 2"
+      ],
+      "X": [
+        "Service update",
+        "Booking: R518",
+        "New departure: 2027-08-12 23:55",
+        "Platform: 8"
+      ],
+      "U": [
+        "Service update",
+        "Booking: R581",
+        "New departure: 2027-08-13 00:12",
+        "Platform: 3"
+      ],
+      "P": [
+        "Hotel confirmation",
+        "City: Leeds",
+        "Property: Fern Court",
+        "Check-in: 2027-08-13"
+      ],
+      "Y": [
+        "Hotel confirmation",
+        "City: York",
+        "Property: Grey Arch",
+        "Check-in: 2027-08-12"
+      ]
+    },
+    "gold": [
+      "2027-08-12 23:26",
+      38,
+      "Fern Court",
+      "2",
+      "LTP"
+    ],
+    "control": "original"
+  }
+]
